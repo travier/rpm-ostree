@@ -10,3 +10,5 @@ DynamicUser=yes
 StateDirectory=rpm-ostree-countme
 StateDirectoryMode=750
 ExecStart=@bindir@/rpm-ostree countme
+Restart=on-failure
+RestartSec=1h
